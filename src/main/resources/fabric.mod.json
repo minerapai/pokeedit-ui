@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "pokeeditui",
+  "version": "${version}",
+  "name": "PokeEdit UI",
+  "description": "A screen to edit party pokemon (level, shiny, nature, ability, IVs, EVs, per pokemon base stats, ...) instead of typing /pokeedit commands. Players without the mod can still join the server.",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["kr.pokeeditui.PokeEditUi"],
+    "client": ["kr.pokeeditui.client.PokeEditUiClient"]
+  },
+  "mixins": [
+    "pokeeditui.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "fabric-api": "*",
+    "cobblemon": ">=1.7.0"
+  }
+}

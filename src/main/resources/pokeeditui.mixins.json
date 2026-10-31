@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "kr.pokeeditui.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["StatProviderMixin", "GraalShowdownServiceMixin", "PokemonPendingHealthMixin", "LoadHealthMixin",
+    "LoadPersistentDataMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
